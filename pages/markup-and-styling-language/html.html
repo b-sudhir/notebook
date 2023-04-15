@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Prism CSS & JS -->
+    <link rel="stylesheet" href="../../plugins/prism/prism.css">
+    <script src="../../plugins/prism/prism.js"></script>
+    <title>Notebook HTML</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <h1 class="notebook__heading-primary"><span>HTML</span></h1>
+        </div>
+    </div>
+
+    <section class="notebook__content">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <ul>
+                    <li>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.</li>
+                    <li>No matter what browser you will be using, Chrome, Safari, Edge, Brave, or Firefox, all these applications do the same thing. They take different files such as HTML, CSS, and JavaScript and render them into a website. But even though most modern websites are created using these three different types combined, we can’t create a website with just a CSS file or JavaScript file. But we can create a website using an HTML file</li>
+                    <li>HTML defines the content and structure of the website</li>
+                    <li>HTML stands for HyperText Markup Language
+                        <ul>
+                            <li>HyperText refers to the pieces of text which can link to other documents in the website. So, these pieces of text are hypertext or hyperlinks and they are the foundation of how an HTML website works. If we click on a hyperlink on a website and it will take us to another HTML page or website and that’s how hyperlinks work</li>
+                            <li>Markup Language refers to the manuscript used to mark and show different things, for example, which parts need to be bold, italics, etc. Markup in HTML is done through the HTML tags</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 class="notebook__heading-secondary">Anatomy of HTML Tags</h5>
+                <ul>
+                    <img style="width: 300px; height: 100px; margin-bottom: 10px;" src="../../images/markup-and-styling-language/anatomy_of_html_tag.png" alt="anatomy_of_html_tag">
+                    <li><code class="notebook__one-line-code">&lt;h1&gt;Hello World&lt;/h1&gt;</code> - <code class="notebook__one-line-code">&lt;h1&gt;</code>is the start tag and <code class="notebook__one-line-code">&lt;/h1&gt;</code> is the end tag. In between the opening tag and the closing tag is the content that we want to render</li>
+                    <li>In HTML, we have some tags without the end tag, and those HTML tags are called Self Closing Tags, E.g., <code class="notebook__one-line-code">&lt;br&gt;</code>, <code class="notebook__one-line-code">&lt;hr&gt;</code>, etc.</li>
+                    <li>In HTML, some tags will have parameters (aka. attributes), for example: <code class="notebook__one-line-code">&lt;hr size=”3”&gt;</code>, where <code class="notebook__one-line-code">&lt;hr&gt;</code> is the HTML self-closing tag and <code class="notebook__one-line-code">size=”3”</code> is the attribute of that HTML tag and it gives more information to the browser to specify modifications to that HTML element</li>
+                    <p><span class="notebook__note">Note</span>: To know whether the HTML element is a self-closing tag or the HTML element is having the end tag and also if you want to know the attributes of an HTML element, then kindly refer to the documentation (reference: <a href="https://devdocs.io/html/" target="_blank">devdocs.io</a>)</p>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 class="notebook__heading-secondary">HTML Boilerplate</h5>
+                <p>An HTML Boilerplate includes the basic structure for an HTML document, like typical HTML, head, and body tags and as well as links to CSS and JavaScript files.</p>
+                <pre class="line-numbers">
+                    <code class="language-html">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &lt;title&gt;Document&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
+                <p>The above HTML code is the boilerplate for HTML and with that we usually start off with any new HTML file</p>
+                <ul>
+                    <li><code class="notebook__one-line-code">&lt;!DOCTYPE html&gt;</code> - is the doctype declaration of HTML5 and this tag tells the browser which version of HTML the file was written in</li>
+                    <li><code class="notebook__one-line-code">&lt;html lang="en"&gt;&lt;/html&gt;</code> - is the root element of the document i.e., all the HTML element tags will go inside this <code class="notebook__one-line-code">&lt;html&gt;</code> tag and this tag has an attribute called <code class="notebook__one-line-code">lang="en"</code>, where it says the language of the text content in that element</li>
+                    <li><code class="notebook__one-line-code">&lt;head&gt;&lt;/head&gt;</code> - is the tag containing important information about our website and this important information will not be displayed to the user</li>
+                    <li><code class="notebook__one-line-code">&lt;meta charset="UTF-8"&gt;</code> - is a self-closing tag for the character set encoding of the webpage. This tag ensures that the character that you’re using on your website is getting displayed correctly and UTF-8 is the charset we are using</li>
+                    <li><code class="notebook__one-line-code">&lt;title&gt;&lt;/title&gt;</code> - this tag is responsible for displaying the title of our website on the tab bar</li>
+                    <li><code class="notebook__one-line-code">&lt;body&gt;&lt;/body&gt;</code> - in between this tag is where all the content of the website goes (text, titles, images, etc.) and whatever you write in between this tag, those content/information will be displayed on the website</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 class="notebook__heading-secondary">HTML Tags</h5>
+                <h6 class="notebook__heading-tertiary">Main Root & Sectioning Root Tags</h6>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h6 class="notebook__heading-quaternary">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          &lt;!DOCTYPE html&gt;
+                        </button>
+                      </h6>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><code class="notebook__one-line-code">&lt;!DOCTYPE html&gt;</code> - declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</li>
+                                <li><code class="notebook__one-line-code">&lt;!DOCTYPE html&gt;</code> - is the doctype declaration of HTML5 and this tag tells the browser which version of HTML the file was written in</li>
+                                <li>In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition).</li>
+                                <ul>
+                                    <li>HTML 4.01 - <code class="notebook__one-line-code">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></li>
+                                    <li>XHTML 1.1 - <code class="notebook__one-line-code">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code></li>
+                                </ul>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h6 class="notebook__heading-quaternary">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            &lt;html&gt;
+                        </button>
+                      </h6>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><code class="notebook__one-line-code">&lt;!DOCTYPE html&gt;</code> - declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</li>
+                                <li><code class="notebook__one-line-code">&lt;!DOCTYPE html&gt;</code> - is the doctype declaration of HTML5 and this tag tells the browser which version of HTML the file was written in</li>
+                                <li>In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition).</li>
+                                <ul>
+                                    <li>HTML 4.01 - <code class="notebook__one-line-code">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></li>
+                                    <li>XHTML 1.1 - <code class="notebook__one-line-code">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code></li>
+                                </ul>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h6 class="notebook__heading-quaternary">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            &lt;head&gt;
+                        </button>
+                      </h6>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>The <code class="notebook__one-line-code">&lt;head&gt;</code> element is a container for metadata (data about data) and is placed between the <code class="notebook__one-line-code">&lt;html&gt;</code> tag and the <code class="notebook__one-line-code">&lt;body&gt;</code> tag</li>
+                                <li>Metadata is data about the HTML document. Metadata is not displayed.</li>
+                                <li>Metadata typically define the document title, character set, styles, scripts, and other meta information.</li>
+                                <li>The following elements can go inside <code class="notebook__one-line-code">&lt;head&gt;</code> element:</li>
+                                <ul>
+                                    <li><code class="notebook__one-line-code">&lt;title&gt;</code></li>
+                                    <li><code class="notebook__one-line-code">&lt;style&gt;</code></li>
+                                    <li><code class="notebook__one-line-code">&lt;base&gt;</code></li>
+                                    <li><code class="notebook__one-line-code">&lt;link&gt;</code></li>
+                                    <li><code class="notebook__one-line-code">&lt;meta&gt;</code></li>
+                                    <li><code class="notebook__one-line-code">&lt;script&gt;</code></li>
+                                    <li><code class="notebook__one-line-code">&lt;noscript&gt;</code></li>
+                                </ul>
+                            </ul>
+                            <h6 class="notebook__heading-quaternary">Example</h6>
+                            <pre class="line-numbers">
+                                <code class="language-html">
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html lang="en"&gt;
+                                    &lt;head&gt;
+                                        &lt;meta charset="UTF-8"&gt;
+                                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                        &lt;title&gt;Document&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code>
+                            </pre>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h6 class="notebook__heading-quaternary">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              &lt;title&gt;
+                          </button>
+                        </h6>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <ul>
+                                  <li>The <code class="notebook__one-line-code">&lt;title&gt;</code> tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</li>
+                                  <li>The <code class="notebook__one-line-code">&lt;title&gt;</code> tag is required in HTML documents.</li>
+                                  <li>The contents of a page title is very important for search engine optimization (SEO). The page title is used by search engine algorithms to decide the order when listing pages in search results.</li>
+                                  <li>The <code class="notebook__one-line-code">&lt;title&gt;</code> element:</li>
+                                  <ul>
+                                      <li>Defines a title in the browser toolbar</li>
+                                      <li>Provides a title for the page when it is added to favorites</code></li>
+                                      <li>Displays a title for the page in search-engine results</code></li>
+                                  </ul>
+                                  <li>Here are some tips for creating a title:</li>
+                                  <ul>
+                                    <li>Go for a longer, descriptive title (avoid one- or two-word titles)</li>
+                                    <li>Search engines will display about 50-60 characters of the title, so try not to have titles longer than that</code></li>
+                                    <li>Do not use just a list of words as the title (this may reduce the page's position in search results)</code></li>
+                                  </ul>
+                              </ul>
+                              <h6 class="notebook__heading-quaternary">Example</h6>
+                              <code class="notebook__one-line-code">&lt;title&gt;Website Title&lt;/title&gt;</code>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h6 class="notebook__heading-quaternary">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              &lt;style&gt;
+                          </button>
+                        </h6>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <ul>
+                                  <li>The <code class="notebook__one-line-code">&lt;style&gt;</code> tag is used to define style information (CSS) for a document.</li>
+                                  <li>Inside <code class="notebook__one-line-code">&lt;style&gt;</code>  element you specify how HTML elements should render in a browser.</li>
+                              </ul>
+                              <h6 class="notebook__heading-quaternary">Attributes</h6>
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col-sm-12 col-md-12 col-lg-12">Attribute</th>
+                                    <th scope="col-sm-12 col-md-12 col-lg-12">Value</th>
+                                    <th scope="col-sm-12 col-md-12 col-lg-12">Description</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>media</td>
+                                    <td><code class="notebook__one-line-code">media_query</code></td>
+                                    <td>Specifies what media/device the media resource is optimized for</td>
+                                  </tr>
+                                  <tr>
+                                    <td>type</td>
+                                    <td><code class="notebook__one-line-code">text/css</code></td>
+                                    <td>Specifies what media type of the <code class="notebook__one-line-code">&lt;style&gt;</code> tag</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <h6 class="notebook__heading-quaternary">Example</h6>
+                              <pre class="line-numbers">
+                                <code class="language-html">
+                                    &lt;!DOCTYPE html&gt;
+                                    &lt;html lang="en"&gt;
+                                    &lt;head&gt;
+                                        &lt;meta charset="UTF-8"&gt;
+                                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                        &lt;style&gt;
+                                            h1 {color: red}
+                                            p { color: blue}
+                                        &lt;/style&gt;
+                                        &lt;title&gt;Document&lt;/title&gt;
+                                    &lt;/head&gt;
+                                    &lt;body&gt;
+                                        &lt;h1&gt;Heading&lt;/h1&gt;
+                                        &lt;p&gt;Paragraph&lt;/p&gt;
+                                    &lt;/body&gt;
+                                    &lt;/html&gt;
+                                </code>
+                              </pre>
+                              <h6 class="notebook__heading-quaternary">Output</h6>
+                              <div class="notebook__code-output">
+                                <h1 style="color: red;">Heading</h1>
+                                <p  style="color: blue;">Paragraph</p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>

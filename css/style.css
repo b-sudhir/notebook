@@ -1,0 +1,108 @@
+/* Google Fonts: Bai Jamjuree, Poppins, JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px;
+    line-height: 1.9;
+}
+
+.notebook__heading-primary {
+    font-family: 'Bai Jamjuree';
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+.notebook__heading-primary span {
+    color: #E5383B;
+}
+
+.notebook__heading-secondary {
+    font-family: 'Bai Jamjuree';
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.notebook__heading-tertiary {
+    font-family: 'Bai Jamjuree';
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+}
+
+.notebook__heading-quaternary {
+    font-family: 'Bai Jamjuree';
+    font-size: 14px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+}
+
+.notebook__one-line-code {
+    font-family: 'JetBrains Mono';
+    font-size: 12px;
+    background-color: #E6E6E6;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.notebook__code-block {
+    font-size: 13px;
+    background-color: #E6E6E6;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.notebook__code {
+    font-family: 'JetBrains Mono';
+}
+
+.notebook__code-output {
+    font-size: 13px;
+    background-color: #D1FFC6;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.notebook__note {
+    font-family: 'Bai Jamjuree';
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.notebook__pages {
+    margin-top: 10px;
+}
+
+.notebook__pages-list {
+    font-family: 'Bai Jamjuree';
+    font-size: 14px;
+    list-style: none;
+}
+
+.notebook__pages-list-item a {
+    color: #E5383B;
+}
+
+.notebook__content {
+    margin-top: 10px;
+    font-family: 'Poppins';
+}
